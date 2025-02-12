@@ -1,0 +1,51 @@
+package ejerciciosEnClase;
+import java.util.Scanner;
+public class Rombo2_pedirFilas {
+	static Scanner sc = new Scanner (System.in);
+	public static void main(String[] args) {
+		
+			System.out.print("Introduce el numero de filas: ");
+			    int d=sc.nextInt();
+			System.out.print("Introduce el primer caracter: ");
+		        char c1=sc.next().charAt(0);
+		    System.out.print("Introduce el segundo caracter: ");
+		        char c2=sc.next().charAt(0);
+int medio=1;
+		
+		for(int f = d; f >= 1; f--) {
+			for (int c = 1; c <= f; c++) { //c1
+				System.out.print(c1);
+			}
+            for (int c = 1; c <= medio; c++) { //c2
+				System.out.print(c2);
+			}
+            medio+=2;
+            for (int c = 1; c <= f; c++) { //c1
+        	   System.out.print(c1);
+            }
+            System.out.println();   
+		}
+		
+		
+        for(int f = d; f <= medio; f++) { //FILA SIN CARACTER C1
+			System.out.print(c2);
+		}
+        System.out.println();
+        
+        
+        for(int f = d; f <= 5; f++) {
+			for (int c = 1; c <= f; c++) { //c1
+				System.out.print(c1);
+			}
+            for (int c = 1; c <= medio; c++) { //c2
+				System.out.print(c2);
+			}
+            medio-=2;
+            for (int c = 1; c <= f; c++) { //c1
+        	   System.out.print(c1);
+            }
+            System.out.println();   
+		}
+	}
+
+}

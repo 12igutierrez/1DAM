@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.jee.feature"
+      label="%featureName"
+      version="4.33.0.20240905-0613"
+      provider-name="%providerName"
+      plugin="org.eclipse.epp.package.jee">
+
+   <description url="http://eclipse.org/epp">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <!-- This ensures these feature cannot be uninstalled. They are installed with installMode="root" in the product --> 
+   <requires>
+      <import plugin="org.eclipse.wtp.epp.package.jee.intro"/>
+      <import plugin="org.eclipse.wtp.javascript.capabilities"/>
+      <import plugin="org.eclipse.wtp.jee.capabilities"/>
+      <import plugin="org.eclipse.wtp.web.capabilities"/>
+      <import plugin="org.eclipse.wtp.xml.capabilities"/>
+      <import plugin="org.eclipse.wtp.epp.package.capabilities"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.jee"
+         version="4.33.0.20240905-0613"/>
+
+</feature>
